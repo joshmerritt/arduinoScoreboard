@@ -22,7 +22,7 @@ I wanted a scoreboard that was easy to read, had a timer, and was nice to look a
 
 ## Tools
 
-- Solder Iron
+- Soldering Iron
 - Solder
 - Wire (3+ different colors)
 - Multimeter
