@@ -7,7 +7,7 @@ A basic two player scoreboard with a 20 minute per game timer. Users can add or 
 
 ## Motivation
 
-I wanted a scoreboard that was easy to read, had a timer, and was nice to look at. Deciding to solder together 50 through-hole addressable RBG LEDs as my first arduino project must have been a moment of insanity and naivety, but it was a lot of fun and it's worked reliably for over 3 years, to boot! If you're looking to build a scoreboard, I encourage you to take a look at mine, but let your imagination/needs run wild and make it your own. Overall, this was a great first electronics project for me that truly enhanced the playing experience for our shuffleboard league
+I wanted a scoreboard that was easy to read, had a timer, and was nice to look at. Deciding to solder together 50 through-hole addressable RBG LEDs as my first arduino project must have been a moment of insanity and naivety, but it was a lot of fun and it's worked reliably for over 3 years, to boot! If you're looking to build a scoreboard, I encourage you to take a look at mine, but let your imagination/needs run wild and make it your own. Overall, this was a great first electronics project for me that enhanced the playing experience for our shuffleboard league.
 
 
 ## Components
