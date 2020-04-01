@@ -2,7 +2,7 @@
 
 ## Overview
 
-A basic two player scoreboard with a 20 minute per game timer. Users can add or subtract from their score, reset the game, toggle sound, and toggle between 15 and 21 point games. 
+A basic two team scoreboard with a 20 minute per game timer. Users can add or subtract from their score, reset the game, toggle sound, and toggle between 15 and 21 point games. 
 
 
 ## Motivation
@@ -32,13 +32,13 @@ I wanted a scoreboard that was easy to read, had a timer, and was nice to look a
 
 *disclaimer* As my first into the arduino world, I am sure there are many things that could be improved upon and countless other ways to do things. This is merely a recount of my approach to completing this project.
 
-I initially did a lot of research into scoreboards for sale ($200+) and anyone DIYer's like me had built. Given the idea I had in my head to use color changing LEDs, I didn't find much inspiration, so resorted to ordering these through-hole LEDs, so I could create exactly the pattern I wanted. This was a BIG design decision and impacted the hours required and potential failure points dramatically, but I didn't fully grasp that at the time. 
+I initially did a lot of research into scoreboards for sale ($200+) and any DIYer's like me had built. Given the idea I had in my head to use color changing LEDs, I didn't find much inspiration, so resorted to ordering these through-hole LEDs, so I could create exactly the pattern I wanted. This was a BIG design decision and impacted the hours required and potential failure points dramatically, but I didn't fully grasp that at the time. 
 
-Then I started by building an initial prototype housing, which I later replaced with a nicer walnut housing once I'd gotten the scoreboard fully functioning. I also wanted to have my buttons separate from my housing, so I built a 'box' for them and ran a length of wire to the scoreboard housing which contained the arduino, LEDs, and buzzers. I researched how to use the LEDs I'd bought (WS2811) and chose to use the FastLED library. Otherwise I wrote the functions to read the buttons, update the score, and celebrate the winner using the basic tutorials covered in the Arduino IDE. I later added some 'music' and a separate reset button.
+Then I started by building an initial prototype housing, which I later replaced with a high-quality walnut housing once I'd gotten the scoreboard fully functioning. I also wanted to have my buttons separate from my housing, so I built a 'box' for them and ran a length of wire to the scoreboard housing which contained the arduino, LEDs, and buzzers. I researched how to use the LEDs I'd bought (WS2811) and chose to use the FastLED library. Otherwise I wrote the functions to read the buttons, update the score, and celebrate the winner using the basic tutorials covered in the Arduino IDE. I later added some 'music' and a separate reset button.
 
-Soldering the LEDs together was the most painstaking part, especially because it turned out mine needed to have a capacitor on each one to prevent the display from flickering or being wonky. But even this was simple enough, with 4 pins on each LEDs, 2 for signal (in/out) and 2 for power (+/-). I carefully bent the pins such that each out went to the next in and soldered together, providing additional lengths of wire for when the layout required. I then adjusted the + and - pins to be easily chained to a single + wire and a single - wire. Using my multimeter I checked for any shorts before powering it up using the power suppy. Upon successful completion of this step I hooked up the first in pin to a PWM pin on the arduino and tried out my code. 
+Soldering the LEDs together was the most painstaking part, especially because it turned out mine needed to have a capacitor on each one to prevent the display from flickering or being wonky. But even this was simple enough, with 4 pins on each LEDs, 2 for signal (in/out) and 2 for power (+/-). I carefully bent the pins such that each out went to the next in and soldered them together, providing additional lengths of wire for when the layout required. I then adjusted the + and - pins to be easily chained to a single positive wire and a single negative wire. Using my multimeter I checked for any shorts before powering it up using the power suppy. Upon successful completion of this step I hooked up the first in pin to a PWM pin on the arduino and tried out my code. 
 
-There was a lot of trial and error in getting the code to handle all the cases gracefully as this was my first coding projects since I'd graduated college almost a decade prior. 
+There was a lot of trial and error in getting the code to handle all the cases gracefully as this was my first independent coding project since I'd graduated college almost a decade prior. 
 
 ## Requirements
 
